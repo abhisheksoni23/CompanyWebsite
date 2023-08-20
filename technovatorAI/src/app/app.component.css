@@ -23,6 +23,7 @@ nav {
     background-color: black; /* Or whatever color you've chosen */
     padding-bottom: 3px;
     padding-top: 3px;
+    height: auto;
 }
 .company-logo img {
     height: 40px;
