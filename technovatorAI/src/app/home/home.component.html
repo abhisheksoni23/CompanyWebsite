@@ -1,1 +1,84 @@
-<p>home works!</p>
+<!-- <div class="hero">
+    <img src="assets/imageHome.jpg" alt="Hero Image" class="hero-bg">
+    <div class="hero-content">
+        <p>Talk to us Today</p>
+        <h1>We'll build the technology<br>for your tomorrow</h1>
+    </div>
+</div>--> 
+<div class="hero-section">
+    <img src="assets/imageHome.jpg" alt="Hero Image" class="hero-image">
+    <div class="overlay-text">Talk to us Today!<br>we'll build the technology for your tomorrow</div>
+</div>
+
+<hr class="dotted-line"> <!-- Horizontal dotted line -->
+
+<div class="service-block">
+    <img [src]="currentImage" alt="Service Image" class="service-image">
+
+    <div class="service-list">
+        <h2 class="headingh2">Services</h2>
+        <ul>
+            <li (mouseover)="changeImage('webDevelopment')" 
+                (click)="navigateToService('webDevelopment')"
+                class="listClass">Web Development</li>
+            <li (mouseover)="changeImage('IOTSolution')" 
+                (click)="navigateToService('IOTSolution')"
+                class="listClass">IOT Solution</li>
+            <li (mouseover)="changeImage('VRSolution')" 
+                (click)="navigateToService('VRSolution')"
+                class="listClass">VR/AR Solutions</li>
+            <li (mouseover)="changeImage('GameDEV')" 
+                (click)="navigateToService('GameDEV')"
+                class="listClass">Game Development</li>
+            <li (mouseover)="changeImage('AdvanceTech')" 
+                (click)="navigateToService('AdvanceTech')"
+                class="listClass">Advanced Technologies</li>   
+            <li (mouseover)="changeImage('GeeksOnD')" 
+                (click)="navigateToService('GeeksOnD')"
+                class="listClass">Geeks On Demand</li>              
+            <!-- Add more services similarly -->
+        </ul>
+    </div>
+</div>
+<hr class="dotted-line">
+
+
+<section class="clients-section">
+    <div class="container">
+        <!-- <h2>Clients</h2> -->
+        <div class="client-container">
+            <div class="client-block">
+                <img src="assets\circle-3041437_640.jpg" alt="Client 1 Logo">
+                <p>Innovate</p>
+            </div>
+            <div class="client-block">
+                <img src="assets\cubes-2492010_640.jpg" alt="Client 2 Logo">
+                <p>Integrate</p>
+            </div>
+            <div class="client-block">
+                <img src="assets\abstract-5035778_640.jpg" alt="Client 3 Logo">
+                <p>Elevate</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="dotted-line">
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="about-technovator">
+            <h3>About TechnovatorAI</h3>
+            <ul>
+                <li><a href="/history">History</a></li>
+                <li><a href="/careers">Careers</a></li>
+                <li><a href="/address">Address</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; 2023 TechnovatorAI. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+
