@@ -1,0 +1,129 @@
+.dotted-line {
+    border-top: 1px dotted #000;
+    width: 100%;
+    margin: 20px 0;
+}
+@media (max-width: 768px) {
+    /* Styles for tablets and mobile devices */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    /* ... Other responsive styles ... */
+}
+.hero-section {
+    position: relative;
+    max-width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+}
+.service-image{
+    height: 270px;
+    width: 500px;
+    padding-left: 6%;
+}
+.service-block{
+    display: flex;
+    
+}
+.service-list{
+    padding-left: 15%;
+}
+.headingh2{
+    padding-left: 18%;
+}
+.listClass{
+    padding-bottom: 10px;
+}
+
+.footer-section {
+    background-color: #222; /* Dark background for the footer */
+    color: #fff; /* White text */
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-technovator h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-technovator ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-technovator li {
+    margin-bottom: 10px;
+}
+
+.about-technovator a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-technovator a:hover {
+    color: #007BFF; /* Adjust to your preferred hover color */
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.clients-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;  /* Light grey background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.client-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  /* In case of smaller screens, blocks will wrap below */
+}
+
+.client-block {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #e2e2e2;  /* Light border around each block */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.client-block:hover {
+    transform: scale(1.05);  /* Slight scale effect on hover */
+}
+
+.client-block img {
+    max-width: 100%;  /* Ensures the client logo doesn't overflow the block */
+    height: auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,59 @@
+<mat-toolbar color="primary" class="sticky-toolbar" class="navbar2">
+  <!-- Logo and Company Name 
+  <span class="company-logo">
+    <img src="assets\logoTechnovaotrAI.png" alt="Company Logo">
+  </span>
+  <span class="company-name">TechnoV</span> -->
+  <div class="logo-section">
+    <img src="assets\logoTechnovaotrAI.png" alt="technoV Logo" class="company-logo">
+    <img src="assets\NameTechnovaotrAI.png" alt="technoV Logo" class="company-name">
+  </div>
+  <!-- Desktop Navigation (hidden on small screens) -->
+  <div class="desktop-nav">
+  <span >
+    <a mat-button routerLink="">Home</a>
+    <a mat-button routerLink="/about">About</a>
+    <a mat-button routerLink="/services">Services</a>
+    <a mat-button routerLink="/career">Career</a>
+    <a mat-button routerLink="/contact">Contact</a>
+    <!-- Add more links as required -->
+  </span>
+</div>
+  <!-- Mobile Navigation (sidenav toggle button) -->
+  <span class="mobile-nav">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </span>
+</mat-toolbar>
+
+<!-- Sidenav for Mobile -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" position="start">
+    <a mat-button routerLink="/home" (click)="sidenav.close()">Home</a>
+    <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
+    <!-- Add more links as required -->
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Your main content goes here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!--<nav class="navbar">
+
+  <div class="logo-section">
+    <img src="assets\logoTechnovaotrAI.png" alt="technoV Logo" class="company-logo">
+    <img src="assets\NameTechnovaotrAI.png" alt="technoV Logo" class="company-name">
+  </div>
+
+  <a routerLink="/">Home</a>
+  <a routerLink="/about">About</a>
+  <a routerLink="/services">Services</a>
+  <a routerLink="/career">Career</a>
+  <a routerLink="/contact">Contact</a>
+</nav> -->
+
+
+
+
+<router-outlet></router-outlet>
